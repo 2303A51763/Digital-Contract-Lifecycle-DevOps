@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Submit a contract</h1><p>Enter the contract details for review.</p>
+<form class="panel" method="post">
+<label>Contract title<input name="title" required maxlength="120" placeholder="e.g. Software Services Agreement"></label>
+<label>Department<input name="department" required placeholder="e.g. Procurement"></label>
+<label>Owner / requester<input name="owner" required placeholder="e.g. Priya Kumar"></label>
+<label>Description<textarea name="description" rows="4" placeholder="Briefly describe the contract"></textarea></label>
+<div class="actions"><a class="muted" href="/">Cancel</a><button type="submit">Submit for approval</button></div>
+</form>
+{% endblock %}
