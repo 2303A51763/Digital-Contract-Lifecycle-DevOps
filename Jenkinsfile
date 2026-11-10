@@ -17,7 +17,7 @@ pipeline {
         }
         stage('Build Docker image') {
             steps {
-                bat 'docker build -t contractflow:%BUILD_NUMBER% .'
+                bat '"C:\\Program Files\\Docker\\Docker\\resources\\bin\\docker.exe" build -t contractflow:%BUILD_NUMBER% .'
             }
         }
     }
